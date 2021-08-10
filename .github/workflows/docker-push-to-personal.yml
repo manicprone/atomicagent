@@ -3,7 +3,8 @@ name: 'deploy-to-personal'
 on:
   push:
     branches:
-      - dev
+      # - dev
+      - dockerized
     paths:
       - 'env/personal/**'
       - 'src/**'
