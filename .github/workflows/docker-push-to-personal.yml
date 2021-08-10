@@ -56,7 +56,7 @@ jobs:
           echo "ECR_REPOSITORY: ${ECR_REPOSITORY}"
           echo "ECR_REGISTRY with env: ${{ env.ECR_REGISTRY }}"
           echo "ECR_REPOSITORY with env: ${{ env.ECR_REPOSITORY }}"
-        run: source ./bin/setup-docker-build.sh "$ENV_ALIAS"
+          source ./bin/setup-docker-build.sh "$ENV_ALIAS"
 
         # run: |
         #   docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
